@@ -55,7 +55,7 @@ const displayData = (json, days, index) => {
     if ('AT' in json[days[index]]) {
         document.getElementById("temperature").innerHTML = `The average pressure today is ${json[days[index]].AT.av} °F`
     } else {
-        document.getElementById("temperature").innerHTML = `There is no temperature available for today!`
+        document.getElementById("temperature").innerHTML = `There is no temperature data available for today!`
     }
     if ('HWS' in json[days[index]]) {
         document.getElementById("wind").innerHTML = `The average wind speed today is ${json[days[index]].HWS.av} m/s`
